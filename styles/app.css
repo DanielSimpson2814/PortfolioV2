@@ -1,0 +1,326 @@
+/*font-family: 'Yellowtail', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Lato', sans-serif;*/
+html, body, section{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.con{
+  display: -webkit-flex;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.con div{
+  display: -webkit-flex;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.right-art{
+  position: absolute;
+  left: 25%;
+}
+
+.left{
+  background: url("/images/dev-small.png");
+  background-size:cover;
+  background-position: center;
+  transform: skew(-26.5deg, 0);
+  /*flex: 3;*/
+  margin-left: 2rem;
+  padding: 2rem;
+  height: 100%;
+  -webkit-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  -webkit-transition: padding 400ms ease-in-out;
+  -o-transition: padding 400ms ease-in-out;
+  transition: padding 400ms ease-in-out;
+}
+
+.middle{
+  background: url("/images/design-small.png");
+  background-size:cover;
+  background-position: center;
+  transform: skew(-26.5deg, 0);
+  /*flex: 2;*/
+  padding: 2rem;
+  -webkit-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  -webkit-transition: padding 400ms linear;
+  -o-transition: padding 400ms linear;
+  transition: padding 400ms linear;
+}
+
+.right{
+  -webkit-flexbox: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  align-content: center;
+  padding: 1rem;
+  color: black;
+}
+
+div.left:hover, div.middle:hover{
+  -ms-transform: scale(.98);
+  -ms-transform: skew(-26.5deg, 0);
+  -webkit-transform: scale(.98);
+  -webkit-transform: skew(-26.5deg, 0);
+  transform: scale(.98);
+  transform: skew(-26.5deg, 0);
+  z-index: 2;
+  padding: 0;
+  padding-right: 10em;
+  padding-left: 10em;
+}
+
+.left h1{
+  -webkit-transform: skew(26.5deg, 0);
+  -ms-transform: skew(26.5deg, 0);
+  transform: skew(26.5deg, 0);
+  font-size: 6rem;
+}
+
+.middle h1{
+  -webkit-transform: skew(26.5deg, 0);
+  -ms-transform: skew(26.5deg, 0);
+  transform: skew(26.5deg, 0);
+  font-size: 6rem;
+}
+
+.right h1{
+  font-size: 6rem;
+  font-family: 'Pacifico', cursive;
+}
+
+.right h2{
+  font-family: "Lato", sans-serif;
+}
+
+.social{
+  /*top: 20px;*/
+  top: -35%;
+  right: 20px;
+  text-align: right;
+  position: absolute;
+}
+
+.social a{
+  color: #000;
+  font-size: 2rem;
+  padding: 1rem;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.social a:hover{
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.myBtn{
+  font-family: "Lato", sans-serif;
+  letter-spacing: 2px;
+  color: #fff;
+  border: 4px solid #000000;
+  background: rgba(30, 30, 30, 1);
+  padding: 20px 50px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transform: skew(26.5deg, 0);
+  -ms-transform: skew(26.5deg, 0);
+  transform: skew(26.5deg, 0);
+  display: inline-block;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.myBtn:hover, a:hover{
+  background: rgba(0, 0, 0, .7);
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.right .myBtn{
+  -webkit-transform: skew(0, 0);
+  -ms-transform: skew(0, 0);
+  transform: skew(0, 0);
+  background: rgba(0, 0, 0, 1);
+  padding: 30px 60px;
+}
+
+.right .myBtn:hover{
+  background: rgba(0, 0, 0, .8);
+}
+
+
+@media (min-width: 826px) and (max-width: 886px) {
+  .right{
+    margin-top: 11em;
+  }
+}
+
+@media (max-width: 827px){
+  .con{
+    flex-flow: column-reverse;
+  }
+
+  .left{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-transform: skew(0, 0);
+    -ms-transform: skew(0, 0);
+    transform: skew(0, 0);
+    margin-left: 0;
+    padding: 60px;
+  }
+
+  .middle{
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    -webkit-transform: skew(0, 0);
+    -ms-transform: skew(0, 0);
+    transform: skew(0, 0);
+    padding: 60px;
+    margin-top: 25px;
+  }
+
+  .left h1, .middle h1, .myBtn{
+    -webkit-transform: skew(0, 0);
+    -ms-transform: skew(0, 0);
+    transform: skew(0, 0);
+  }
+
+  div.left:hover, div.middle:hover{
+    -webkit-transform: scale(1) skew(0, 0);
+    -ms-transform: scale(1) skew(0, 0);
+    transform: scale(1) skew(0, 0);
+    z-index: 0;
+    padding: 60px;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+
+
+  .right{
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+  }
+
+  .right-art{
+    left: inherit;
+  }
+}
+
+@media (max-width: 827px) {
+
+  .con div {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .left, .middle{
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 72px;
+  }
+  div.left:hover, div.middle:hover{
+    -webkit-transform: scale(1) skew(0, 0);
+    -ms-transform: scale(1) skew(0, 0);
+    transform: scale(1) skew(0, 0);
+    z-index: 0;
+    padding: 80px;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+
+  .left article,
+  .middle article{
+    position: absolute;
+    left: 50%;
+    margin-left: -88px;
+  }
+
+  .right article{
+    position: absolute;
+    left: 50%;
+    margin-left: -142px;
+  }
+
+  .right{
+    margin-top: 50px;
+    margin-bottom: 72px;
+  }
+
+  .right .myBtn{
+    padding: 15px 60px;
+  }
+
+  .left h1,
+  .middle h1,
+  .right h1{
+    font-size: 4rem;
+    margin-bottom: 5px;
+  }
+
+
+  .social{
+    top: 2px;
+    left: 0.5px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .social a{
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 750px) and (orientation: landscape){
+  html, body, section{
+    height: inherit;
+  }
+}
+@media (min-width: 320px) and (max-width: 750px) and (orientation: portrait){
+  html, body, section{
+    height: 100%;
+  }
+}
+
+@media (min-width: 828px){
+  div.left:hover, div.middle:hover{
+    -webkit-transition: padding 400ms linear;
+    -o-transition: padding 400ms linear;
+    transition: padding 400ms linear;
+  }
+}
